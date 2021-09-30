@@ -22,6 +22,8 @@ app.use((req, res, next) => {
         }).catch(error => {
             console.log(error);
         });
+    } else {
+        res.send('No target specified');
     }
 });
 
